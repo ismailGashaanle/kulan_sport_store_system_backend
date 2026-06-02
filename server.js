@@ -11,7 +11,8 @@
  const inventoryRouter = require("./src/routes/inventory/inventoryRoutes")
  const salesRouter = require("./src/routes/sales/salesRouter")
  const customerRouter = require("./src/routes/customerRouter/customerRouter")
- const orderRouter = require("./src/routes/order/orderRouter")
+ const orderRoutes = require("./src/routes/order/orderRouter")
+//  const orderRouter = require("./src/routes/order/orderRouter")
  
 const paymentRouter = require("./src/routes/payment/paymentRouter")
 const receiptRouter = require("./src/routes/receipt/receiptRouter")
@@ -37,7 +38,7 @@ app.use(cors(
  app.use("/",inventoryRouter)
  app.use("/",salesRouter)
  app.use("/",customerRouter)
- app.use("/", orderRouter)
+ app.use("/", orderRoutes)
 app.use("/", paymentRouter)
 app.use("/", receiptRouter)
 
