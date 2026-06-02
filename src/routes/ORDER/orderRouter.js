@@ -1,10 +1,10 @@
 
 const express = require("express");
-const UserAuth = require("../../middleware/auth");
-const Order = require("../../models/Order");
-const OrderItem = require("../../models/OrderItem");
-const Product = require("../../models/products");
-const Payment = require("../../models/PAYMENT.js")
+const UserAuth = require("../../middleware/auth.js");
+const Order = require("../../models/Order.js");
+const OrderItem = require("../../models/OrderItem.js");
+const Product = require("../../models/products.js");
+const Payment = require("../../models/payment.js")
 
 const orderRouter = express.Router();
 
