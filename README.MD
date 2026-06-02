@@ -22,4 +22,7 @@
 │ PUT         │ /admin/users/:id/role   │ Update user role                    │
 │ PUT         │ /admin/users/:id/status │ Activate/deactivate user            │
 │ DELETE      │ /admin/users/:id        │ Delete user                         │
-└─────────────┴─────────────────────────┴─────────────────────────────────────┘
+└─────────────┴─────────────────────────┴─────────────────────────────────────┘"# kulan-sport-store-system-backend-" 
+"# kulan-sport-store-system-backend-" 
+"# kulan-sport-store-system-backend-" 
+"# kulan-sport-store-system-backend-" 

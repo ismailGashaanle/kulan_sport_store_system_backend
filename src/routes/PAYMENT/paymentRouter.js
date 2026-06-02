@@ -1,6 +1,6 @@
 const express = require("express");
 const UserAuth = require("../../middleware/auth");
-const Payment = require("../../models/payment");
+const Payment = require("../../models/PAYMENT");
 const Order = require("../../models/Order");
 const Receipt = require("../../models/Receipt");
 const Product = require("../../models/products");
