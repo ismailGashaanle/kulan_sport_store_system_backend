@@ -11,12 +11,14 @@
  const inventoryRouter = require("./src/routes/inventory/inventoryRoutes")
  const salesRouter = require("./src/routes/sales/salesRouter")
  const customerRouter = require("./src/routes/customerRouter/customerRouter")
- const orderRouter = require("./src/routes/ORDER/orderRouter")
+//  const orderRouter = require("./src/routes/ORDER/orderRouter")
 //  const orderRouter = require("./src/routes/order/orderRouter")
  
-const paymentRouter = require("./src/routes/PAYMENT/paymentRouter")
+// const paymentRouter = require("./src/routes/PAYMENT/paymentRouter")
 const receiptRouter = require("./src/routes/receipt/receiptRouter")
  const cookieParser = require("cookie-parser")
+  const orderRouter = require('./src/routes/order/orderRouter')
+const paymentRouter =require('./src/routes/payment/paymentRouter')
  const cors= require("cors")
  
 app.use(cors(
