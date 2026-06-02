@@ -38,9 +38,13 @@ app.use(cors(
  app.use("/",salesRouter)
  app.use("/",customerRouter)
  app.use("/", orderRouter)
-app.use("/", paymentRouter)
-app.use("/", receiptRouter)
-
+// app.use("/", paymentRouter)
+// app.use("/", receiptRouter)
+// app.use("/orders", orderRouter)
+ 
+app.use("/orders", orderRouter)
+app.use("/payments", paymentRouter)
+app.use("/receipts", receiptRouter)
 
  
 
