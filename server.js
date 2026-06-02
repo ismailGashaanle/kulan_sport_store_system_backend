@@ -14,7 +14,7 @@
  const orderRouter = require("./src/routes/ORDER/orderRouter")
 //  const orderRouter = require("./src/routes/order/orderRouter")
  
-const paymentRouter = require("./src/routes/payment/paymentRouter")
+const paymentRouter = require("./src/routes/PAYMENT/paymentRouter")
 const receiptRouter = require("./src/routes/receipt/receiptRouter")
  const cookieParser = require("cookie-parser")
  const cors= require("cors")
