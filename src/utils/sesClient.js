@@ -21,8 +21,24 @@
 // export { sesClient };
 // // snippet-end:[ses.JavaScript.createclientv3]
 
-import { SESClient } from "@aws-sdk/client-ses";
+// import { SESClient } from "@aws-sdk/client-ses";
 
-export const sesClient = new SESClient({
-  region: process.env.AWS_REGION || "us-east-1",
+// export const sesClient = new SESClient({
+//   region: process.env.AWS_REGION || "us-east-1",
+// });
+
+
+const { SESClient } = require("@aws-sdk/client-ses");
+// Set the AWS Region.
+const REGION = "us-east-1"; // region: process.env.AWS_REGION || "us-east-1",
+// Create SES service object.
+const sesClient = new SESClient({
+  region: REGION,
+  credentials: {
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  },
 });
+
+module.exports = { sesClient };
+// snippet-end:[ses.JavaScript.createclientv3]

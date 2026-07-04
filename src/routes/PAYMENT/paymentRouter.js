@@ -4,8 +4,11 @@ const Payment = require("../../models/PAYMENT");
 const Order = require("../../models/Order");
 const Receipt = require("../../models/Receipt");
 const Product = require("../../models/products");
+<<<<<<< HEAD
 const { sendEmail } = require("../../utils/sendEmail");
 
+=======
+>>>>>>> 3e2a52907a7c2857d52f0981a4347420568b4c8d
 
 const paymentRouter = express.Router();
 
@@ -90,6 +93,7 @@ paymentRouter.post("/api/v1/payments/:orderId",UserAuth,async(req,res)=>{
      
 
         await payment.save();
+<<<<<<< HEAD
         try {
   await sendEmail({
     to: logginUser.email,
@@ -116,6 +120,8 @@ paymentRouter.post("/api/v1/payments/:orderId",UserAuth,async(req,res)=>{
 } catch (emailError) {
   console.error("Email sending failed:", emailError);
 }
+=======
+>>>>>>> 3e2a52907a7c2857d52f0981a4347420568b4c8d
 
       const receipt = await Receipt.create({
 
