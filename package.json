@@ -13,10 +13,6 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-<<<<<<< HEAD
-    "@aws-sdk/client-s3": "^3.1078.0",
-=======
->>>>>>> 3e2a52907a7c2857d52f0981a4347420568b4c8d
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
